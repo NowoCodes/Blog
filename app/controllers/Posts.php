@@ -11,7 +11,7 @@ class Posts extends  Controller
 	public function index()
 	{
 		$posts = $this->postModel->findAllPosts();
-		$data = ['posts' => $posts,];
+		$data = ['posts' => $posts];
 
 		$this->view('posts/index', $data);
 	}
@@ -50,14 +50,13 @@ class Posts extends  Controller
 
 			if (empty($data['titleError']) && empty($data['bodyError'])) {
 				if ($this->postModel->addPost($data)) {
-					header('Location: ' . URLROOT . 'posts');
+					header('Location: ' . URLROOT . '/posts');
 				} else {
 					die("Something went wrong, please try again!");
 				}
 			} else {
 				$this->view('posts/create', $data);
 			}
-
 		}
 
 		$this->view('posts/create', $data);
