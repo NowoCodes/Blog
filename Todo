@@ -3,13 +3,13 @@ DATABASE
 -- 2. Add Dummy text
 
 CREATE
-1. User needs yo be logged in
-2. Check if data is text
-3. Check for empty fields
+-- 1. User needs to be logged in
+-- 2. Check if data is text
+-- 3. Check for empty fields
 4. If checks are met, do a request and create post
 
 READ
-1. Read data from the database
+-- 1. Read data from the database
 
 UPDATE
 1. Same as create, but we need values on the post
