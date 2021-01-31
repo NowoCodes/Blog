@@ -12,4 +12,4 @@
     define('URLROOT', 'http://localhost/mvcblog');
 
     //Sitename
-    define('SITENAME', 'Login & Register script');
+    define('SITENAME', 'Blog using MVC Framework');

@@ -1,5 +1,5 @@
 <?php
-class Posts extends  Controller
+class Posts extends Controller
 {
 	private $postModel;
 
